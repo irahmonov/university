@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% if special %}
+    <ul>
+    {% for spec in special %}
+        <li>{{ spec }} </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <h2>No speciality</h2>
+{% endif %}
+</body>
+</html>
+

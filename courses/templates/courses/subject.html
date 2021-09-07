@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% if subjects %}
+    <ul>
+    {% for sub in subjects %}
+        <li>
+        <a href="{% url 'sub_detail' sub.pk %} ">
+            <h2> {{ sub }} </h2>
+        </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <h2>No subjects</h2>
+{% endif %}
+</body>
+</html>
+
+
+
